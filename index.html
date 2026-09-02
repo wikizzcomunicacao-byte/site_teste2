@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROTA Centro de Estética Automotiva</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -24,24 +23,18 @@
             }
         }
     </script>
-    <!-- Google Fonts: Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-brandBlue selection:text-white overflow-x-hidden">
 
-    <!-- HERO SECTION -->
     <section class="relative min-h-screen flex flex-col items-center justify-center text-center px-4 py-20 overflow-hidden bg-gradient-to-b from-black via-darkBg to-darkBg">
-        <!-- Background Car Image with Dark Overlay -->
         <div class="absolute inset-0 z-0 opacity-30">
-            <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=1600&auto=format&fit=crop" alt="Background Car" class="w-full h-full object-cover">
+            <img src="./polimentotecnico.jpg" alt="Background Car" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-darkBg/80 to-black/60"></div>
         </div>
 
-        <!-- Content Wrapper -->
         <div class="relative z-10 max-w-4xl mx-auto flex flex-col items-center gap-8">
-            <!-- Logo Badge -->
             <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-slate-900/80 border border-slate-700/60 p-2 shadow-2xl backdrop-blur-md flex items-center justify-center">
                 <div class="text-center">
                     <span class="block text-lg sm:text-xl font-black tracking-widest text-white">ROTA</span>
@@ -49,17 +42,14 @@
                 </div>
             </div>
 
-            <!-- Main Heading -->
             <h1 class="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight text-white uppercase max-w-3xl leading-[1.15]">
                 SEU CARRO COM APARÊNCIA DE NOVO EM POUCAS HORAS — <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">BRILHO, PROTEÇÃO E VALORIZAÇÃO GARANTIDA</span>
             </h1>
 
-            <!-- Subtitle -->
             <p class="text-sm sm:text-base text-slate-400 max-w-xl font-normal">
                 Na Rota Centro Estética Automotiva, seu veículo recebe tratamento profissional com acabamento impecável, muito além de uma lavagem comum.
             </p>
 
-            <!-- CTA Button -->
             <a href="https://wa.me/5517991708394" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold text-base shadow-xl shadow-brandBlue/30 hover:scale-105 transition-all duration-300">
                 <i data-lucide="message-circle" class="w-5 h-5 fill-current"></i>
                 Agendar agora pelo WhatsApp
@@ -67,7 +57,6 @@
         </div>
     </section>
 
-    <!-- POR QUE ESCOLHER A ROTA? -->
     <section class="py-24 px-4 max-w-7xl mx-auto">
         <div class="text-center max-w-2xl mx-auto mb-16">
             <h2 class="text-3xl sm:text-4xl font-black tracking-tight mb-4 uppercase">
@@ -79,7 +68,6 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- Card 1 -->
             <div class="bg-cardSurface border border-slate-800/80 rounded-2xl p-6 flex flex-col justify-between hover:border-brandBlue/40 transition-all">
                 <div class="w-12 h-12 rounded-xl bg-brandBlue/10 text-brandBlue flex items-center justify-center mb-6">
                     <i data-lucide="shield" class="w-6 h-6"></i>
@@ -90,7 +78,6 @@
                 </div>
             </div>
 
-            <!-- Card 2 -->
             <div class="bg-cardSurface border border-slate-800/80 rounded-2xl p-6 flex flex-col justify-between hover:border-brandBlue/40 transition-all">
                 <div class="w-12 h-12 rounded-xl bg-brandBlue/10 text-brandBlue flex items-center justify-center mb-6">
                     <i data-lucide="search" class="w-6 h-6"></i>
@@ -101,7 +88,6 @@
                 </div>
             </div>
 
-            <!-- Card 3 (Destaque sutil) -->
             <div class="bg-cardSurface border border-brandBlue/40 rounded-2xl p-6 flex flex-col justify-between shadow-lg shadow-brandBlue/5">
                 <div class="w-12 h-12 rounded-xl bg-brandBlue text-white flex items-center justify-center mb-6 shadow-md shadow-brandBlue/30">
                     <i data-lucide="sparkles" class="w-6 h-6"></i>
@@ -112,7 +98,6 @@
                 </div>
             </div>
 
-            <!-- Card 4 -->
             <div class="bg-cardSurface border border-slate-800/80 rounded-2xl p-6 flex flex-col justify-between hover:border-brandBlue/40 transition-all">
                 <div class="w-12 h-12 rounded-xl bg-brandBlue/10 text-brandBlue flex items-center justify-center mb-6">
                     <i data-lucide="trending-up" class="w-6 h-6"></i>
@@ -123,7 +108,6 @@
                 </div>
             </div>
 
-            <!-- Card 5 -->
             <div class="bg-cardSurface border border-slate-800/80 rounded-2xl p-6 flex flex-col justify-between hover:border-brandBlue/40 transition-all md:col-span-2">
                 <div class="w-12 h-12 rounded-xl bg-brandBlue/10 text-brandBlue flex items-center justify-center mb-6">
                     <i data-lucide="star" class="w-6 h-6"></i>
@@ -136,7 +120,6 @@
         </div>
     </section>
 
-    <!-- NOSSOS SERVIÇOS -->
     <section class="py-24 px-4 max-w-7xl mx-auto bg-black/40 rounded-3xl my-12 border border-slate-900">
         <div class="text-center max-w-2xl mx-auto mb-16">
             <h2 class="text-3xl sm:text-4xl font-black tracking-tight mb-4 uppercase">
@@ -145,10 +128,9 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Serv 1 -->
             <div class="bg-cardSurface border border-slate-800 rounded-2xl overflow-hidden flex flex-col group">
                 <div class="h-48 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?q=80&w=600&auto=format&fit=crop" alt="Polimento Técnico" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="./polimentotecnico.jpg" alt="Polimento Técnico" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
                 <div class="p-6 flex flex-col flex-1 justify-between">
                     <div>
@@ -158,10 +140,9 @@
                 </div>
             </div>
 
-            <!-- Serv 2 -->
             <div class="bg-cardSurface border border-slate-800 rounded-2xl overflow-hidden flex flex-col group">
                 <div class="h-48 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop" alt="Higienização Interna" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="./higienizacaointerna.jpg" alt="Higienização Interna" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
                 <div class="p-6 flex flex-col flex-1 justify-between">
                     <div>
@@ -171,10 +152,9 @@
                 </div>
             </div>
 
-            <!-- Serv 3 -->
             <div class="bg-cardSurface border border-slate-800 rounded-2xl overflow-hidden flex flex-col group">
                 <div class="h-48 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1607860108855-64bc2079f82f?q=80&w=600&auto=format&fit=crop" alt="Lavagem Detalhada" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="./lavagemdetalhada.jpeg" alt="Lavagem Detalhada" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
                 <div class="p-6 flex flex-col flex-1 justify-between">
                     <div>
@@ -184,10 +164,9 @@
                 </div>
             </div>
 
-            <!-- Serv 4 -->
             <div class="bg-cardSurface border border-slate-800 rounded-2xl overflow-hidden flex flex-col group">
                 <div class="h-48 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=600&auto=format&fit=crop" alt="Cristalização / Vitrificação" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="./cristalizacaovitrificacao.jpeg" alt="Cristalização / Vitrificação" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
                 <div class="p-6 flex flex-col flex-1 justify-between">
                     <div>
@@ -197,10 +176,9 @@
                 </div>
             </div>
 
-            <!-- Serv 5 -->
             <div class="bg-cardSurface border border-slate-800 rounded-2xl overflow-hidden flex flex-col group md:col-span-2">
                 <div class="h-48 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=80&w=800&auto=format&fit=crop" alt="Revitalização de Faróis" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="./revitalizacaodefarois.jpg" alt="Revitalização de Faróis" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
                 <div class="p-6 flex flex-col flex-1 justify-between">
                     <div>
@@ -212,70 +190,49 @@
         </div>
     </section>
 
-    <!-- ANTES & DEPOIS -->
-    <section class="py-24 px-4 max-w-5xl mx-auto text-center">
+    <section class="py-24 px-4 max-w-4xl mx-auto text-center">
         <h2 class="text-3xl sm:text-4xl font-black tracking-tight mb-2 uppercase">ANTES & DEPOIS</h2>
-        <p class="text-slate-400 text-sm mb-12">Veja a transformação que fazemos no seu veículo</p>
+        <p class="text-slate-400 text-sm mb-12">Veja a transformação real que fazemos no seu veículo</p>
 
         <div class="bg-cardSurface border border-slate-800 rounded-3xl p-6 shadow-2xl overflow-hidden relative">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 rounded-2xl overflow-hidden">
-                <div class="relative">
-                    <span class="absolute top-4 left-4 z-10 px-3 py-1 bg-black/70 text-xs font-bold rounded-md uppercase tracking-wider text-red-400">Antes</span>
-                    <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=600&auto=format&fit=crop" alt="Antes" class="w-full h-72 object-cover filter contrast-125 brightness-75">
-                </div>
-                <div class="relative">
-                    <span class="absolute top-4 left-4 z-10 px-3 py-1 bg-black/70 text-xs font-bold rounded-md uppercase tracking-wider text-brandBlue">Depois</span>
-                    <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=600&auto=format&fit=crop" alt="Depois" class="w-full h-72 object-cover">
-                </div>
+            <div class="rounded-2xl overflow-hidden">
+                <img src="./antesdepois.jpg" alt="Antes e Depois" class="w-full h-auto object-cover">
             </div>
-            <p class="text-xs text-slate-500 mt-4 uppercase tracking-widest font-semibold">Acabamento Profissional Garantido</p>
+            <p class="text-xs text-slate-500 mt-4 uppercase tracking-widest font-semibold">Transformação Exclusiva Rota</p>
         </div>
     </section>
 
-    <!-- O QUE NOSSOS CLIENTES DIZEM -->
     <section class="py-24 px-4 max-w-7xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-black tracking-tight mb-16 text-center uppercase">O QUE NOSSOS CLIENTES DIZEM</h2>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Review 1 -->
             <div class="bg-cardSurface border border-slate-800/80 rounded-2xl p-6 flex flex-col justify-between">
                 <div>
-                    <div class="flex text-amber-400 gap-1 mb-4">
-                        ★★★★★
-                    </div>
+                    <div class="flex text-amber-400 gap-1 mb-4">★★★★★</div>
                     <p class="text-slate-300 text-xs italic mb-4">"Meu carro saiu zero! Nunca vi um brilho assim. Recomendo demais!"</p>
                 </div>
                 <span class="text-xs font-bold text-white">Carlos M.</span>
             </div>
 
-            <!-- Review 2 -->
             <div class="bg-cardSurface border border-slate-800/80 rounded-2xl p-6 flex flex-col justify-between">
                 <div>
-                    <div class="flex text-amber-400 gap-1 mb-4">
-                        ★★★★★
-                    </div>
+                    <div class="flex text-amber-400 gap-1 mb-4">★★★★★</div>
                     <p class="text-slate-300 text-xs italic mb-4">"Serviço impecável, muito melhor que qualquer lava-rápido. Atenção incrível aos detalhes."</p>
                 </div>
                 <span class="text-xs font-bold text-white">Ana P.</span>
             </div>
 
-            <!-- Review 3 -->
             <div class="bg-cardSurface border border-slate-800/80 rounded-2xl p-6 flex flex-col justify-between">
                 <div>
-                    <div class="flex text-amber-400 gap-1 mb-4">
-                        ★★★★★
-                    </div>
+                    <div class="flex text-amber-400 gap-1 mb-4">★★★★★</div>
                     <p class="text-slate-300 text-xs italic mb-4">"Vale cada centavo, parece outro carro. A higienização interna ficou perfeita."</p>
                 </div>
                 <span class="text-xs font-bold text-white">Ricardo S.</span>
             </div>
 
-            <!-- Review 4 -->
             <div class="bg-cardSurface border border-slate-800/80 rounded-2xl p-6 flex flex-col justify-between">
                 <div>
-                    <div class="flex text-amber-400 gap-1 mb-4">
-                        ★★★★★
-                    </div>
+                    <div class="flex text-amber-400 gap-1 mb-4">★★★★★</div>
                     <p class="text-slate-300 text-xs italic mb-4">"Profissionalismo de verdade. Meu carro nunca esteve tão bonito. Virei cliente fiel!"</p>
                 </div>
                 <span class="text-xs font-bold text-white">Fernanda L.</span>
@@ -283,11 +240,10 @@
         </div>
     </section>
 
-    <!-- SOBRE A ROTA -->
     <section class="py-24 px-4 max-w-6xl mx-auto">
         <div class="bg-cardSurface border border-slate-800 rounded-3xl p-8 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div class="rounded-2xl overflow-hidden shadow-xl border border-slate-700/50">
-                <img src="https://images.unsplash.com/photo-1590362891991-f776e747a588?q=80&w=800&auto=format&fit=crop" alt="Fachada Rota Estética" class="w-full h-80 object-cover">
+                <img src="./polimentotecnico.jpg" alt="Fachada Rota Estética" class="w-full h-80 object-cover">
             </div>
             <div class="flex flex-col gap-6">
                 <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white">SOBRE A <span class="text-brandBlue">ROTA</span></h2>
@@ -298,7 +254,6 @@
                     Mais do que uma lavagem, oferecemos um tratamento completo que protege, valoriza e transforma o visual do seu veículo. Somos referência em qualidade e confiança na região.
                 </p>
 
-                <!-- Metrics Grid -->
                 <div class="grid grid-cols-3 gap-4 pt-4 border-t border-slate-800 text-center">
                     <div>
                         <span class="block text-lg sm:text-xl font-black text-white">2.000+</span>
@@ -317,12 +272,10 @@
         </div>
     </section>
 
-    <!-- PERGUNTAS FREQUENTES (FAQ) -->
     <section class="py-24 px-4 max-w-4xl mx-auto">
         <h2 class="text-3xl sm:text-4xl font-black tracking-tight mb-12 text-center uppercase">PERGUNTAS <span class="text-brandBlue">FREQUENTES</span></h2>
 
         <div class="flex flex-col gap-4">
-            <!-- FAQ Item 1 -->
             <div class="bg-cardSurface border border-slate-800 rounded-2xl overflow-hidden transition-all">
                 <button onclick="toggleFaq(this)" class="w-full p-6 text-left flex justify-between items-center font-bold text-sm sm:text-base text-white focus:outline-none">
                     <span>Quanto tempo demora o serviço?</span>
@@ -333,7 +286,6 @@
                 </div>
             </div>
 
-            <!-- FAQ Item 2 -->
             <div class="bg-cardSurface border border-slate-800 rounded-2xl overflow-hidden transition-all">
                 <button onclick="toggleFaq(this)" class="w-full p-6 text-left flex justify-between items-center font-bold text-sm sm:text-base text-white focus:outline-none">
                     <span>Precisa agendar?</span>
@@ -344,7 +296,6 @@
                 </div>
             </div>
 
-            <!-- FAQ Item 3 -->
             <div class="bg-cardSurface border border-slate-800 rounded-2xl overflow-hidden transition-all">
                 <button onclick="toggleFaq(this)" class="w-full p-6 text-left flex justify-between items-center font-bold text-sm sm:text-base text-white focus:outline-none">
                     <span>O polimento remove todos os riscos?</span>
@@ -355,7 +306,6 @@
                 </div>
             </div>
 
-            <!-- FAQ Item 4 -->
             <div class="bg-cardSurface border border-slate-800 rounded-2xl overflow-hidden transition-all">
                 <button onclick="toggleFaq(this)" class="w-full p-6 text-left flex justify-between items-center font-bold text-sm sm:text-base text-white focus:outline-none">
                     <span>Quanto tempo dura o brilho?</span>
@@ -366,7 +316,6 @@
                 </div>
             </div>
 
-            <!-- FAQ Item 5 -->
             <div class="bg-cardSurface border border-slate-800 rounded-2xl overflow-hidden transition-all">
                 <button onclick="toggleFaq(this)" class="w-full p-6 text-left flex justify-between items-center font-bold text-sm sm:text-base text-white focus:outline-none">
                     <span>Qual a diferença para um lava-rápido?</span>
@@ -379,9 +328,7 @@
         </div>
     </section>
 
-    <!-- FINAL CTA & FOOTER -->
     <footer class="bg-black/80 border-t border-slate-900 pt-20 pb-12 mt-20">
-        <!-- Call to Action Box -->
         <div class="max-w-4xl mx-auto px-4 text-center mb-20">
             <h2 class="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white mb-4">
                 AGENDE AGORA E VEJA A <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">TRANSFORMAÇÃO</span> NO SEU CARRO
@@ -393,9 +340,7 @@
             </a>
         </div>
 
-        <!-- Main Footer Links / Info -->
         <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 pt-12 border-t border-slate-900/80 items-center text-xs text-slate-400">
-            <!-- Brand / Logo info -->
             <div class="flex items-center gap-4">
                 <div class="w-10 h-10 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center font-black text-white">R</div>
                 <div>
@@ -404,7 +349,6 @@
                 </div>
             </div>
 
-            <!-- Contact info -->
             <div class="flex flex-col gap-2 md:items-center">
                 <div class="flex items-center gap-2">
                     <i data-lucide="phone" class="w-4 h-4 text-brandBlue"></i>
@@ -420,7 +364,6 @@
                 </div>
             </div>
 
-            <!-- Copyright -->
             <div class="flex flex-col md:items-end gap-1 text-right">
                 <p>&copy; Rota Centro de Estética Automotiva - Todos os Direitos Reservados</p>
                 <p class="text-slate-500">Feito com ♥ pela VXL Media</p>
@@ -428,7 +371,6 @@
         </div>
     </footer>
 
-    <!-- Script para inicializar ícones e o accordion do FAQ -->
     <script>
         lucide.createIcons();
 
@@ -436,8 +378,6 @@
             const content = button.nextElementSibling;
             const icon = button.querySelector('i');
             
-            // Fecha outros abertos (opcional)
-            // Abre/fecha o atual
             if (content.style.maxHeight && content.style.maxHeight !== '0px') {
                 content.style.maxHeight = '0px';
                 icon.style.transform = 'rotate(0deg)';
