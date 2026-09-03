@@ -25,8 +25,23 @@
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        @media print {
+            body { background-color: #090a0f !important; color: #fff !important; }
+            .no-print { display: none !important; }
+            button { display: none !important; }
+        }
+    </style>
 </head>
 <body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-brandRed selection:text-white overflow-x-hidden">
+
+    <div class="fixed bottom-6 right-6 z-50 no-print">
+        <button onclick="window.print()" class="flex items-center gap-2.5 px-5 py-3 rounded-full bg-red-600 hover:bg-red-700 text-white font-bold text-xs uppercase tracking-wider shadow-2xl shadow-red-600/50 hover:scale-105 transition-all duration-300 border border-red-500/30">
+            <i data-lucide="file-down" class="w-4 h-4"></i>
+            Salvar Página em PDF
+        </button>
+    </div>
 
     <section class="relative min-h-screen flex flex-col items-center justify-center text-center px-4 py-20 overflow-hidden bg-gradient-to-b from-black via-darkBg to-darkBg">
         <div class="absolute inset-0 z-0 opacity-35">
@@ -43,17 +58,23 @@
             </div>
 
             <h1 class="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight text-white uppercase max-w-3xl leading-[1.15]">
-                SEU CARRO COM APARÊNCIA DE NOVO EM POUCAS HORAS — <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-400">BRILHO, PROTEÇÃO E VALORIZAÇÃO GARANTIDA</span>
+                ESTÉTICA AUTOMOTIVA — <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-400">BRILHO, PROTEÇÃO E VALORIZAÇÃO GARANTIDA</span>
             </h1>
 
             <p class="text-sm sm:text-base text-slate-400 max-w-xl font-normal">
                 Na Paulinho Estética Automotiva, seu veículo recebe tratamento profissional de alto padrão em São José do Rio Preto, muito além de uma lavagem comum.
             </p>
 
-            <a href="https://wa.me/5517991835321" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-red-600 to-rose-600 text-white font-bold text-base shadow-xl shadow-brandRed/30 hover:scale-105 transition-all duration-300">
-                <i data-lucide="message-circle" class="w-5 h-5 fill-current"></i>
-                Agendar agora pelo WhatsApp
-            </a>
+            <div class="flex flex-wrap items-center justify-center gap-4">
+                <a href="https://wa.me/5517991835321" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-red-600 to-rose-600 text-white font-bold text-base shadow-xl shadow-brandRed/30 hover:scale-105 transition-all duration-300">
+                    <i data-lucide="message-circle" class="w-5 h-5 fill-current"></i>
+                    Agendar agora pelo WhatsApp
+                </a>
+                <button onclick="window.print()" class="no-print inline-flex items-center gap-2 px-6 py-4 rounded-full bg-slate-800/80 hover:bg-slate-800 text-slate-200 font-semibold text-sm border border-slate-700 backdrop-blur-md transition-all">
+                    <i data-lucide="download" class="w-4 h-4 text-brandRed"></i>
+                    Baixar Proposta em PDF
+                </button>
+            </div>
         </div>
     </section>
 
@@ -334,10 +355,16 @@
                 PRONTO PARA RENOVAR O SEU <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-400">CARRO</span>?
             </h2>
             <p class="text-slate-400 text-sm mb-8">Entre em contato agora mesmo e faça um orçamento sem compromisso.</p>
-            <a href="https://wa.me/5517991835321" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-red-600 to-rose-600 text-white font-bold text-base shadow-xl shadow-brandRed/30 hover:scale-105 transition-all duration-300">
-                <i data-lucide="message-circle" class="w-5 h-5 fill-current"></i>
-                Chamar no WhatsApp
-            </a>
+            <div class="flex flex-wrap items-center justify-center gap-4">
+                <a href="https://wa.me/5517991835321" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-red-600 to-rose-600 text-white font-bold text-base shadow-xl shadow-brandRed/30 hover:scale-105 transition-all duration-300">
+                    <i data-lucide="message-circle" class="w-5 h-5 fill-current"></i>
+                    Chamar no WhatsApp
+                </a>
+                <button onclick="window.print()" class="no-print inline-flex items-center gap-2 px-6 py-4 rounded-full bg-slate-800/80 hover:bg-slate-800 text-slate-200 font-semibold text-sm border border-slate-700 backdrop-blur-md transition-all">
+                    <i data-lucide="download" class="w-4 h-4 text-brandRed"></i>
+                    Baixar Proposta em PDF
+                </button>
+            </div>
         </div>
 
         <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 pt-12 border-t border-slate-900/80 items-center text-xs text-slate-400">
@@ -361,7 +388,7 @@
             </div>
 
             <div class="flex flex-col md:items-end gap-1 text-right">
-                <p>&copy; Paulinho Estética Automotiva - Todos os Direitos Reservados</p>
+                <p>© Paulinho Estética Automotiva - Todos os Direitos Reservados</p>
                 <p class="text-slate-500">Desenvolvido com excelência</p>
             </div>
         </div>
